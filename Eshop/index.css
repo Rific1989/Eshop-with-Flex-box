@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***********************Reusable**********************/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/***********************Header**********************/
+header {
+    height: 170px;
+    background-color: #0f0f0f;
+    width: 100%;
+    position: fixed;
+}
+
+header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+/********************Container*********************/
+.container {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 55px;
+}
+
+.container div {
+    width: 250px;
+    text-align: center;
+}
+
+.container .logo {
+    padding-top: 25px;
+    padding-left: 35px;
+}
+
+.container .contact {
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+.container .contact p:nth-child(2) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container .contact a:link,
+.container .contact a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container .contact a:hover,
+.container .contact a:active {
+    border-bottom: 1.5px solid #fff;
+}
+
+.container .search-box {
+    padding-top: 30px;
+    padding-left: 15px;
+    width: 350px;
+}
+
+/***********************Search-box*********************/
+form {
+    width: 320px;
+}
+
+.form input[type=text]{
+    height: 40px;
+    width: 250px;
+    border: none;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    font-size: 18px; /*Pokud je zde nastaven font, tlačítko HLEDAT se posune o pár pixelůdolů. Pokud se toto smaže je vše vpořádku.*/
+}
+
+.form input[type=text]::placeholder{
+    font-size: 1.1rem;
+}
+
+.form input[type=submit]{
+   height: 40px;
+   border: none;
+   text-transform: uppercase;
+   padding: 0 5px;
+   font-weight: 700;
+}
+
+.form input[type=submit]:hover{
+    cursor: pointer;
+ }
+
+/***********************Sign in, Register*********************/
+.container .user-box {
+    padding-top: 27px;
+    width: 100px;
+}
+
+.container .user-box a:link,
+.container .user-box a:visited {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #fff;
+    line-height: 23px;
+}
+
+.container .user-box a:hover,
+.container .user-box a:active {
+    border-bottom: 1.5px solid #fff;
+}
+
+/***********************Navigation************************/
+nav {
+    padding-top: 40px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************************************************************************************************************************DropdownMENU***************************************************************************************************************************************************************************************/
+  .dropbtn {
+    text-transform: uppercase;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+        text-decoration: underline;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.sub-dropdown-content .main-product {
+    color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*************Sub dropdown MENU*************************/
+.sub-dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-dropdown-content a {
+    font-size: 12px;
+    color: rgb(126, 121, 121);
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dropdown-menu-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline; /*Pro srovnání sloupečků vedle se v dropmenu, aby začínaly vždy odzhora*/
+    padding: 15px 0 15px 0;
+}
+
+
+
